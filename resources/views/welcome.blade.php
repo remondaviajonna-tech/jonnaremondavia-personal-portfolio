@@ -65,7 +65,22 @@
             padding: 90px 10%;
             display: flex;
             align-items: center;
+            justify-content:space-between;
+            gap:40px;
             background: #FFEDAD;
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #F9DC78;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
         }
 
         .hero-content {
@@ -278,6 +293,12 @@
             min-height: auto;
             padding: 80px 6%;
             text-align: center;
+            flex-direction: column;
+        }
+
+        .hero-image img {
+            width:220px;
+            height:220px;
         }
 
         .hero-content {
@@ -415,7 +436,13 @@
                 <a href="#about" class="button">Explore My Portfolio</a>
 
             </div>
+
+            <div class="hero-image">
+                <img src="{{ asset('images/profile.png') }}" alt="Jonna's Profile Picture">
+            </div>
+
         </section>
+
 
         <section class="about" id="about">
             <span class="section-label">GET TO KNOW ME</span>
